@@ -1,13 +1,15 @@
 //
-//  UIButton+DropDown.h
+//  DropDownButton.h
 //  LikeIBooksDropDownMenu
 //
-//  Created by obumin on 2014/08/27.
-//  Copyright (c) 2014年 Kawai Hiroyuki. All rights reserved.
+//  Created by obumin on 08/27/2014.
+//  Copyright (c) 2014 Kawai Hiroyuki. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIButton (DropDown)
+@interface DropDownButton : UIButton
+
+- (void)setTitle:(NSString *)title forState:(UIControlState)state;
 
 @end

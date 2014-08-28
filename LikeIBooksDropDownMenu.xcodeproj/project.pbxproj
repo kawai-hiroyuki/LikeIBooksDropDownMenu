@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2CB8D5519AE297C00E3A722 /* DropDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CB8D5419AE297C00E3A722 /* DropDownButton.m */; };
 		E2FC5C8919AE0BAA008F1BD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FC5C8819AE0BAA008F1BD9 /* Foundation.framework */; };
 		E2FC5C8B19AE0BAA008F1BD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FC5C8A19AE0BAA008F1BD9 /* CoreGraphics.framework */; };
 		E2FC5C8D19AE0BAA008F1BD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FC5C8C19AE0BAA008F1BD9 /* UIKit.framework */; };
@@ -22,8 +23,6 @@
 		E2FC5CB219AE0BAA008F1BD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2FC5CB019AE0BAA008F1BD9 /* InfoPlist.strings */; };
 		E2FC5CB419AE0BAA008F1BD9 /* LikeIBooksDropDownMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FC5CB319AE0BAA008F1BD9 /* LikeIBooksDropDownMenuTests.m */; };
 		E2FC5CBF19AE0C7D008F1BD9 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FC5CBE19AE0C7D008F1BD9 /* MenuViewController.m */; };
-		E2FC5CC219AE1305008F1BD9 /* arrow-down.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FC5CC019AE1305008F1BD9 /* arrow-down.png */; };
-		E2FC5CC319AE1305008F1BD9 /* arrow-down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FC5CC119AE1305008F1BD9 /* arrow-down@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2CB8D5319AE297C00E3A722 /* DropDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownButton.h; sourceTree = "<group>"; };
+		E2CB8D5419AE297C00E3A722 /* DropDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownButton.m; sourceTree = "<group>"; };
 		E2FC5C8519AE0BAA008F1BD9 /* LikeIBooksDropDownMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeIBooksDropDownMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FC5C8819AE0BAA008F1BD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2FC5C8A19AE0BAA008F1BD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,8 +59,6 @@
 		E2FC5CB319AE0BAA008F1BD9 /* LikeIBooksDropDownMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikeIBooksDropDownMenuTests.m; sourceTree = "<group>"; };
 		E2FC5CBD19AE0C7D008F1BD9 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		E2FC5CBE19AE0C7D008F1BD9 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		E2FC5CC019AE1305008F1BD9 /* arrow-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-down.png"; sourceTree = "<group>"; };
-		E2FC5CC119AE1305008F1BD9 /* arrow-down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-down@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +118,6 @@
 		E2FC5C8E19AE0BAA008F1BD9 /* LikeIBooksDropDownMenu */ = {
 			isa = PBXGroup;
 			children = (
-				E2FC5CC019AE1305008F1BD9 /* arrow-down.png */,
-				E2FC5CC119AE1305008F1BD9 /* arrow-down@2x.png */,
 				E2FC5C9719AE0BAA008F1BD9 /* AppDelegate.h */,
 				E2FC5C9819AE0BAA008F1BD9 /* AppDelegate.m */,
 				E2FC5C9A19AE0BAA008F1BD9 /* Main.storyboard */,
@@ -130,6 +127,8 @@
 				E2FC5CBE19AE0C7D008F1BD9 /* MenuViewController.m */,
 				E2FC5CA019AE0BAA008F1BD9 /* Images.xcassets */,
 				E2FC5C8F19AE0BAA008F1BD9 /* Supporting Files */,
+				E2CB8D5319AE297C00E3A722 /* DropDownButton.h */,
+				E2CB8D5419AE297C00E3A722 /* DropDownButton.m */,
 			);
 			path = LikeIBooksDropDownMenu;
 			sourceTree = "<group>";
@@ -240,9 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2FC5CA119AE0BAA008F1BD9 /* Images.xcassets in Resources */,
-				E2FC5CC319AE1305008F1BD9 /* arrow-down@2x.png in Resources */,
 				E2FC5C9319AE0BAA008F1BD9 /* InfoPlist.strings in Resources */,
-				E2FC5CC219AE1305008F1BD9 /* arrow-down.png in Resources */,
 				E2FC5C9C19AE0BAA008F1BD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +262,7 @@
 				E2FC5C9F19AE0BAA008F1BD9 /* ViewController.m in Sources */,
 				E2FC5C9919AE0BAA008F1BD9 /* AppDelegate.m in Sources */,
 				E2FC5C9519AE0BAA008F1BD9 /* main.m in Sources */,
+				E2CB8D5519AE297C00E3A722 /* DropDownButton.m in Sources */,
 				E2FC5CBF19AE0C7D008F1BD9 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +468,7 @@
 				E2FC5CB919AE0BAA008F1BD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2FC5CBA19AE0BAA008F1BD9 /* Build configuration list for PBXNativeTarget "LikeIBooksDropDownMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +477,7 @@
 				E2FC5CBC19AE0BAA008F1BD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

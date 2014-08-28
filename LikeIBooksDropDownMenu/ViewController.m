@@ -8,10 +8,11 @@
 
 #import "ViewController.h"
 #import "MenuViewController.h"
+#import "DropDownButton.h"
 
 @interface ViewController () <MenuViewControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet DropDownButton *button;
 @end
 
 @implementation ViewController
@@ -19,15 +20,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
-    // Button Setting
-    [self.button setImage:[UIImage imageNamed:@"arrow-down"] forState:UIControlStateNormal];
-    CGFloat titleWidth = self.button.titleLabel.bounds.size.width;
-    CGFloat imageWidth = self.button.imageView.bounds.size.width;
-    // Title is left Image is right
-    self.button.titleEdgeInsets = UIEdgeInsetsMake(0, -imageWidth, 0, imageWidth);
-    self.button.imageEdgeInsets = UIEdgeInsetsMake(0, titleWidth, 0, -titleWidth);
-
+    
+    //self.button.delegate = self;
 }
 
 - (void)viewDidLoad
@@ -67,5 +61,4 @@
 {
     [controller dismissViewControllerAnimated:YES completion:nil];
 }
-
 @end
